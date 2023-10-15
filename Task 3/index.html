@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>Sahithi WEBAPP</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="task-input">
-        
-        <input type="text" placeholder="Add a new task here">
-      </div>
-      <div class="controls">
-        <div class="filters">
-          <span class="active" id="all">All</span>
-          <span id="pending">Pending</span>
-          <span id="completed">Completed</span>
+<html>
+    <head>
+        <meta lang="eng">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial scale=1">
+        <title>Task-3 To-do List</title>
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo">
+                <h2>Task-3 To-do List<img src="icon1.png" height="30px" width="30pxpx"></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your task">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <div>
+                    <ul id="list">
+                        <!--<li class="checked">Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li>-->
+                    </ul>
+                </div>
+            </div>
         </div>
-        <button class="clear-btn">Clear All</button>
-      </div>
-      <ul class="task-box"></ul>
-    </div>
-
-    <script src="script.js"></script>
-
-  </body>
+        <script src="todo.js"></script>
+    </body>
 </html>
