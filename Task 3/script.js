@@ -33,4 +33,4 @@ function saveData(){
 function showData(){
     listC.innerHTML=localStorage.getItem("data")
 }
-showData()
+ showData()
